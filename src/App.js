@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 
 import Header from './components/Layout/Header';
 import Meals from './components/Meals/Meals.js';
 import Cart from './components/Cart/Cart';
 import CardProvider from './components/store/CartProvider';
 
-function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
+function App () {
+  const [cartIsShown, setCartIsShown] = useState (false);
 
   const showCartHandler = () => {
-    setCartIsShown(true);
+    setCartIsShown (true);
   };
 
   const hideCartHandler = () => {
-    setCartIsShown(false);
+    setCartIsShown (false);
   };
 
   return (
